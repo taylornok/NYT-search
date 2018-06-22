@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>New York Times Search</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/nyt.css"/>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/js/nyt.js"></script>
+</head>
+<body>
+    
+    <div class="container">
+            <div class="jumbotron heading">
+                    New York Times Search
+                </div>
+    </div>
+    <div class="container search-div">
+        <div class="row search-head-row">
+            Search Parameters
+        </div>
+            <form id="search-nyt">
+
+                    <div class="form-group">
+                        <label for="search-term">Search Term</label>
+                        <input type="text" class="form-control" id="search-term" placeholder="">
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="number">Number of records to retrieve</label>
+                        <input type="text" class="form-control" id="number" placeholder="">
+    
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="start-year">Start Year</label>
+                        <input type="text" class="form-control" id="start-year">
+                    </div>
+
+                    <div class="form-group">
+                            <label for="start-year">End Year</label>
+                            <input type="text" class="form-control" id="end-year">
+                        </div>
+                    <button id="search-btn" class="btn btn-primary" aria-pressed="false">Search</button>
+                    <button id="clear-btn" class="btn btn-primary" aria-pressed="false">Clear Results</button>
+
+                </form>
+    </div>
+    <div class="container" id="articles">
+
+    </div>
+</body>
+</html>
